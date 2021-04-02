@@ -1,0 +1,26 @@
+{
+    "name": "ol-custom",
+    "version": "0.0.1",
+    "description": "examples created with openlayer controls and interaction methods extending to create custom operations",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+        "prepublishOnly": "npm run tsc"
+    },
+    "keywords": [
+        "openlayer"
+    ],
+    "author": "wavesMeetU",
+    "license": "MIT",
+    "dependencies": {
+        "ol": "^6.5.0"
+    },
+    "devDependencies": {
+        "@types/ol": "^6.4.2",
+        "typescript": "4.2.3"
+    }
+}
